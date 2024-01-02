@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .875rem;
+    color: hsl(228, 12%, 48%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*  */
+/* CARD */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 260px;
+    }
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 90%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.card-img {
+    order: -1;
+}
+
+.parfume-img {
+    order: -1;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+}
+
+/* CARD MAIN */
+.card-main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em 1.5em;
+}
+
+.card-title {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.card-info {
+    order: -1;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+
+/* Prices */
+.card-prices {
+    display: flex;
+}
+
+.discount-price {
+    color: #3D8168;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: .5em 1em .5em 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    align-self: center;
+}
+
+/* button style */
+.add-btn {
+    background-color: #3D8168;
+    padding: 1em 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: .5em;
+}
+
+.add-btn:hover,
+.add-btn:focus {
+    background-color: #1A4031;
+    cursor: pointer;
+}
+
+@media (min-width: 375px) {
+    .container {
+        height: 100vh ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 700px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
+    }
+
+    .card-main {
+    padding: 2em;
+    justify-content: space-between;
+    width: 50%;
+    }
+
+    .card-title {
+        font-size: 2.2rem;
+    }
+
+    .card-info {
+        margin-top: 0;
+    }
+
+    .parfume-img {
+    width: 50%;
+    order: -1;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    }
+}
